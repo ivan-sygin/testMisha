@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Установите команду, которая будет выполняться при запуске контейнера
-CMD ["uvicorn", "main:app", "--reload"]
+CMD ["uvicorn", "main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
